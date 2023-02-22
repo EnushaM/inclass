@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+    #mon{
+      margin: 0;
+      position: absolute;
+      top:10%;
+      left: 50%;
+      width: 150px;
+      height: 150px;
+    }
+    #cir{
+      margin: 0;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      width: 170px;
+      height: 170px;
+      border-radius: 50%;
+      background: darkblue;
+    }   
+  </style>
+</head>
+<body>
+  <div id="mon">
+    <img id="cl"onclick="change()"src="Pics/close.png">
+  </div>
+  <div id="cir" onmouseover="enlarge()"></div>
+<script>
+  function change(){
+    document.getElementById("cl").src="Pics/open.png"; 
+  }
+  function enlarge()
+  {
+    document.getElementById("cir").style.width="300px";
+    document.getElementById("cir").style.height="300px";
+  }
+  function random_color(){
+</script>
+</body>
+</html>
